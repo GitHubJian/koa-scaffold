@@ -21,5 +21,7 @@ new App({
     static: pathConfig.static,
     favicon: pathConfig.favicon
   },
-  mock: {}
+  mock: {
+    url: pathConfig.mock
+  }
 })

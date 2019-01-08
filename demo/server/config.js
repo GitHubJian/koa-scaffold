@@ -4,6 +4,7 @@ const path = require('path')
 module.exports = {
   path: {
     static: path.resolve(root, './demo/static'),
-    favicon: path.resolve(root, './demo/favicon.ico')
+    favicon: path.resolve(root, './demo/favicon.ico'),
+    mock: path.resolve(root, './demo/mock')
   }
 }
