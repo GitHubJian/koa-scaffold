@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/GitHubJian/koa-scaffold#readme",
   "dependencies": {
+    "co-busboy": "^1.4.0",
     "extend": "^3.0.2",
+    "extend-shallow": "^3.0.2",
     "koa": "^2.6.2",
     "koa-body": "^4.0.6",
     "koa-convert": "^1.2.0",
@@ -27,6 +29,7 @@
     "koa-logger": "^3.2.0",
     "koa-proxy": "^0.9.0",
     "koa-send": "^5.0.0",
-    "path-to-regexp": "^2.4.0"
+    "path-to-regexp": "^2.4.0",
+    "xlsx": "^0.14.1"
   }
 }

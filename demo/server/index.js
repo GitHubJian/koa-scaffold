@@ -5,9 +5,11 @@ const App = require('./../../index.js')
 const exceptionMiddleware = require('./../../middlewares/exceptionMiddleware.js')
 const assetsMiddleware = require('./../../middlewares/assetsMiddleware.js')
 const mockMiddleware = require('./../../middlewares/mockMiddleware.js')
+const parseMiddleware = require('./../../middlewares/parseMiddleware.js')
 
 App.use(exceptionMiddleware)
 App.use(mockMiddleware)
+App.use(parseMiddleware)
 App.use(assetsMiddleware)
 
 new App({
@@ -23,5 +25,8 @@ new App({
   },
   mock: {
     url: pathConfig.mock
+  },
+  parse: {
+    excel: {}
   }
 })
