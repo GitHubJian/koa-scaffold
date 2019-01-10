@@ -64,3 +64,5 @@ submitBtn.onclick = function(e) {
 
   // reader.readAsBinaryString(file)
 }
+
+

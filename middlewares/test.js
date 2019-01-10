@@ -1,27 +1,9 @@
-var extend = require('extend-shallow')
+const rp = require('request-promise')
 
-let o1 = {
-  a: {
-    b: {
-      c: 1
-    }
-  },
-  b: [{ a: 1 }, { a: 2 }]
-}
-
-let o2 = {
-  a: {
-    b: {
-      c: 4
-    },
-    b2: {
-      c: 2
-    }
-  },
-  b: [{ a: 1 }]
-}
-
-let a = extend(o1, o2)
-
-console.log(a)
-console.log(o1)
+rp({
+  uri: 'https://puboa.sogou-inc.com/moa/sylla/open/v1/pns/checklastmsg',
+  method: 'POST',
+  body:{
+    
+  }
+})
